@@ -1,0 +1,9 @@
+nav.main-nav
+  ul.main-nav__menu
+    li.main-nav__item
+      a.main-nav__link(href="index.html") Home
+    -var items = ['1','2','3','4']
+    each item in items
+      li.main-nav__item
+        a.main-nav__link(href= "example-" + item)= item
+    
