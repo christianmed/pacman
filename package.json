@@ -1,0 +1,32 @@
+{
+  "name": "pacman",
+  "version": "1.0.0",
+  "description": "Loaders de Pacman con CSS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/christianmed/pacman.git"
+  },
+  "keywords": [
+    "loader",
+    "html5",
+    "css"
+  ],
+  "author": "Christian Medina",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/christianmed/pacman/issues"
+  },
+  "homepage": "https://github.com/christianmed/pacman#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-pug": "^3.2.0",
+    "gulp-sass": "^3.1.0"
+  }
+}
