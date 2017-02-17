@@ -1,0 +1,10 @@
+.main-header {
+  height: 4em;
+  line-height: 4em;
+  background: $dark;
+  color: $secondary;
+
+  &__title {
+    text-align: center;
+  }
+}

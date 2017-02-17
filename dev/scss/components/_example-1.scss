@@ -1,0 +1,67 @@
+.pacman {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: $size;
+    height: $size / 2;
+    background: lightyellow;
+  }
+
+  &::before {
+    top: 0;
+    border-radius: 50px 50px 0 0;
+    animation: top .4s infinite;
+    
+  }
+
+  &::after {
+    top: 50px;
+    border-radius: 0 0 50px 50px;
+    animation: down .4s infinite;
+  }
+}
+
+@keyframes top {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-33deg);
+  }
+}
+
+@keyframes down {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(33deg);
+  }
+}
+
+.dots {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 10px;
+  height: 10px;
+  margin-top: -5px;
+  margin-left: 30px;
+  border-radius: 50%;
+  background: $dark;
+  z-index: -1;
+  box-shadow: 30px 0 0 $dark,
+              60px 0 0 $dark,
+              90px 0 0 $dark,
+              120px 0 0 $dark,
+              150px 0 0 $dark;
+  animation: move .4s infinite;
+}
+
+@keyframes move {
+  100% {
+    margin-left: -1px;
+  } 
+}
