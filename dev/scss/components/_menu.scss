@@ -1,0 +1,22 @@
+.main-nav {
+  background: red;
+
+  &__menu {
+    background: yellow;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    flex: 1;
+    background: blue;
+    text-align: center;
+
+  }
+
+  &__link {
+    display: block;
+    color: $dark;
+    text-transform: uppercase;
+  }
+}

@@ -24,3 +24,23 @@ ul {
 
 a {
   text-decoration: none; }
+
+.main-nav {
+  background: red; }
+  .main-nav__menu {
+    background: yellow;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .main-nav__item {
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    background: blue;
+    text-align: center; }
+  .main-nav__link {
+    color: #292d3e;
+    text-transform: uppercase; }
